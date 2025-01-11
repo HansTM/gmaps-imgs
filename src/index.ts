@@ -28,7 +28,7 @@ const redirectToFullImage = async (mapsUrl: URL) => {
 		}
 	}
 
-	if (mapsUrl.host.startsWith('googleusercontent.com')) {
+	if (mapsUrl.host.endsWith('googleusercontent.com')) {
 		return Response.redirect(getFullImageUrl(mapsUrl.toString()))
 	}
 	
@@ -62,7 +62,7 @@ export default {
 				mapsUrl.host === 'maps.app.goo.gl' || 
 				mapsUrl.host === 'maps.google.com' || 
 				(googleDomains.filter(a => mapsUrl.host.endsWith(a)).length && mapsUrl.pathname.startsWith('/maps/')) ||
-				mapsUrl.host.startsWith('googleusercontent.com')
+				mapsUrl.host.endsWith('googleusercontent.com')
 			) {
 				return redirectToFullImage(mapsUrl)
 			} else {
