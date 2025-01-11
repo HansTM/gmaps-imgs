@@ -9,7 +9,7 @@ export const indexHtml = `
 	<main class="container">
 		<hgroup>
 			<h1>Google Maps Images Getter</h1>
-			<p>Get full images of Google Maps images with a single URL.</p>
+			<p>Get the full resolution of Google Maps images with a single URL.</p>
 		</hgroup>
 		<form>
 			<fieldset>

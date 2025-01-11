@@ -2,7 +2,7 @@
 
 [![Available on gmaps-imgs.hans-tm.workers.dev](https://img.shields.io/badge/live-gmaps--imgs.hans--tm.workers.dev-blue?style=flat-square&logo=cloudflare-workers&logoColor=white)](https://gmaps-imgs.hans-tm.workers.dev/)
 
-A simple web service to get full images of Google Maps images, built with Cloudflare Workers.
+A simple web service to Get the full resolution of Google Maps images, built with Cloudflare Workers.
 
 ## Usage
 
